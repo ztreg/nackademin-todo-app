@@ -54,7 +54,7 @@ Environments ->
 
     heroku environment -> Settings -> Config Vars
 
-    heroku run npm test
+    heroku run npm test --app jonas-todolist-staging
     heroku run npm test --app fierce-crag-17468
 
     heroku run bash
@@ -70,4 +70,7 @@ Environments ->
     git remote remove heroku
     git remote add staging "heroku git"
 
+	git remote add staging "https://git.heroku.com/jonas-todolist-staging.git"
+	git push staging master
 
+	
